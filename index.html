@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" 
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>اکادمی سبز لرن</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+      <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+</head>
+<body>
+  <section class="top__picture">
+    <img src="images/new__year__top__picture.jpg" alt="new__year__new__ability" width="100%" height="auto" loading="lazy">
+  </section>
+  <div class="right_botton__noroz__pictur">
+    <img src="images/noroz__pic.png" alt="noroz__pay" loading="lazy" id="noroz__pic">
+  </div>
+   <button class="styled__btn__left__corner" data-aos="fade-down-left" onclick="topFunction()" id="myBtn" title="Go to top">
+    ^
+  </button> 
+  <header class="header__section dark__bg">
+    <nav>
+        <div class="logo__header">
+            <li onclick=" showsidebar()"><a href="#"><img class="hamberger" src="images/hamberger.webp" alt="" width="50px" height="40px"></a></li>
+
+            <img class="ff__logo__saz" title="اکادمی سبز لرن" src="images/logo.webp" alt="" width="90px" height="auto">
+            
+        </div>
+        <ul class="sidebar">
+            <img class="sabz__logo" src="images/logo.webp" alt="" width="90px" height="auto">
+            <hr>
+            <div id="hide__in__desktop" class="group hide__on__mobile">
+              <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><g><path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path></g></svg>
+              <input placeholder="سرچ کن" type="search" class="input">
+            </div>
+            <li><a href="#">فرانت اند</a></li>
+            <li><a href="#">بک اند</a></li>
+            <li><a href="#"> امنیت</a></li>
+            <li><a href="#">ارتقای مهارت</a></li>
+            <li><a href="#">پی اچ پی</a></li>
+            <a   href="signup.html">
+               <button class="button__style resposnive__mobile ">ثبت نام / ورود
+                <img src="images/telemarketer-svgrepo-com.svg" alt="" width="40px">
+            </button>
+            </a>
+           
+            <li onclick="hidesidebar()"><a href="#"><img id="close" src="images/closebtn.jpg" alt="" width="90px"></a></li>
+        </ul>
+        <ul>
+            <li class="hide__mobile"><a href="#">فرانت اند</a></li>
+            <li  class="hide__mobile"><a href="#">بک اند</a></li>
+            <li  class="hide__mobile"><a href="#"> امنیت</a></li>
+            <li  class="hide__mobile"><a href="#">ارتقای مهارت</a></li>
+            <li  class="hide__mobile"><a href="#">پی اچ پی</a></li>
+        </ul>
+        
+            </button>
+          </div>
+          <div class="container__simple">
+            <div class="group">
+              <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><g><path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path></g></svg>
+              <input placeholder="Search" type="search" class="input">
+            </div>
+            <a class="hide__inmobile" href="signup.html">
+              <button class="button__style res__mode__header">ثبت نام / ورود
+                <img src="images/telemarketer-svgrepo-com.svg" alt="button__image" width="30px" loading="lazy">
+            </button>
+            </a>
+            
+          </div>
+        
+
+    </nav>
+</header>
+    <!-- start main section -->
+    <main>
+     <div class="general__header">
+      <div class="flex__row__header">
+        <div class="header__content">
+          <div class="img__wrapper__header">
+            <img class="header__image" src="images/update.svg" alt="headser-image" loading="lazy" >
+          </div>
+          <div class="content__main">
+            <h2 style="color: #fff;" class="content1">
+              آکادمی آموزش
+                <br>
+              برنامه نویسی سبزلرن</h2>
+              <h3 style="color: #fff;" class="description__header">
+                با آکادمی خصوصی سبزلرن، علم برنامه نویسی رو با خیال راحت یاد بگیر و پیشرفت کن
+              </h3>
+              <div class="buttons__con">
+                <div class="f__btn first__btn__header css-button-gradient--5 res__mode">از این جا شروع کن</div>
+                <div class="f__btn first__btn__header css-button-gradient--5 res__mode">از این جا شروع کن</div>
+              </div>
+           
+          </div>
+      </div>
+    
+        </div>
+      </div>
+     </div>
+
+    <section class="text__detail">
+      <h3 id="last__course__title">آخرین دوره ها</h3>
+      <h4 id="succuss">سکوی پرتاپ شما به سمت موفقیت </h4>
+    </section>
+    <div class="left__link">
+      <h4 class="left__titile">
+        مشاهده همه دوره ها
+      </h4>
+    </div>
+      <div data-aos="fade-right"
+      data-aos-offset="300"
+      data-aos-easing="ease-in-sine" class="wrapper__all">
+        <section class="hacker__course__first">
+          <img src="images/hacker-course.webp" alt="hacker" class="hacker">
+          <div class="titile__hacker">
+            <h4><span class="right">امنیت</span></h4>
+            <h3 class="hacker__title">ورود به دنیای امنیت | هکر صفر کیلومتر</h3>
+          </div>
+          <div class="description">
+            <h3 class="discription">
+              اگر برای ورود به دنیای امنیت سردرگم هستید 
+              این دوره  میتواند به شما کمک بزرگی کند
+            </h3>
+            <div class="end__detail">
+              <h3 class="teacher">مدرس:علی قاسمی</h3>
+            </div>
+            <hr>
+            <footer class="footer__hacker">
+              <span class="free">
+                !رایگان
+              </span>
+              <span class="mmeber">
+                <div class="text__membe">
+                  1900
+                  <img class="icon__member" src="images/user-svgrepo-com.svg" alt="star__icon" width="40px">
+                </div>
+              </span>
+            </footer>
+        </section>
+      
+        <section data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine" class="hacker__course__first">
+          <img src="images/html css.webp" alt="hacker" class="hacker">
+          <div class="titile__hacker">
+            <h4><span class="right">فرانت اند</span></h4>
+            <h3 class="hacker__title">پیاده ساز داشبورد</h3>
+          </div>
+          <div class="description">
+            <h3 class="discription">
+              اگر برای ورود به دنیای امنیت سردرگم هستید. این دوره با راهنمایی مختصر و مفید و ارائه موارد
+            </h3>
+            <div class="end__detail">
+              <h3 class="teacher">مدرس:علی قاسمی</h3>
+            </div>
+            <hr>
+            <footer class="footer__hacker">
+              <span class="free">
+                !رایگان
+              </span>
+              <span class="mmeber">
+                <div class="text__membe">
+                  1900
+                  <img class="icon__member" src="images/user-svgrepo-com.svg" alt="star__icon" width="40px">
+                </div>
+              </span>
+            </footer>
+        </section>
+        <section data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine" class="hacker__course__first">
+          <img src="images/django.webp" alt="hacker" class="hacker">
+          <div class="titile__hacker">
+            <h4><span class="right">بک اند</span></h4>
+            <h3 class="hacker__title">دوره متخصص جنگو</h3>
+          </div>
+          <div class="description">
+            <h3 class="discription">
+              اگر برای ورود به دنیای امنیت سردرگم هستید. این دوره با راهنمایی مختصر و مفید و ارائه موارد
+            </h3>
+            <div class="end__detail">
+              <h3 class="teacher">مدرس:علی قاسمی</h3>
+            </div>
+            <hr>
+            <footer class="footer__hacker">
+              <span class="free">
+                !رایگان
+              </span>
+              <span class="mmeber">
+                <div class="text__membe">
+                  1900
+                  <img class="icon__member" src="images/user-svgrepo-com.svg" alt="star__icon" width="40px">
+                </div>
+              </span>
+            </footer>
+        </section>
+      
+        <section data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine" class="hacker__course__first">
+          <img src="images/node.js" alt="hacker" class="hacker">
+          <div class="titile__hacker">
+            <h4><span class="right">بک اند</span></h4>
+            <h3 class="hacker__title">صفر تا صد نود جی اس</h3>
+          </div>
+          <div class="description">
+            <h3 class="discription">
+              اگر برای ورود به دنیای امنیت سردرگم هستید. این دوره با راهنمایی مختصر و مفید و ارائه موارد
+            </h3>
+            <div class="end__detail">
+              <h3 class="teacher">مدرس:علی قاسمی</h3>
+            </div>
+            <hr>
+            <footer class="footer__hacker">
+              <span class="free">
+                !رایگان
+              </span>
+              <span class="mmeber">
+                <div class="text__membe">
+                  1900
+                  <img class="icon__member" src="images/user-svgrepo-com.svg" alt="star__icon" width="40px" loading="lazy">
+                </div>
+              </span>
+            </footer>
+        </section>
+      </div>
+        <div data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine" class="roow">
+          <section class="hacker__course__first">
+            <img src="images/alogirthem.webp" alt="hacker" class="hacker">
+            <div class="titile__hacker">
+              <h4><span class="right">بک اند</span></h4>
+              <h3 class="hacker__title">صفر تا صد نود جی اس</h3>
+            </div>
+            <div class="description">
+              <h3 class="discription">
+                اگر برای ورود به دنیای امنیت سردرگم هستید. این دوره با راهنمایی مختصر و مفید و ارائه موارد
+              </h3>
+              <div class="end__detail">
+                <h3 class="teacher">مدرس:علی قاسمی</h3>
+              </div>
+              <hr>
+              <footer class="footer__hacker">
+                <span class="free">
+                  !رایگان
+                </span>
+                <span class="mmeber">
+                  <div class="text__membe">
+                    1900
+                    <img class="icon__member" src="images/user-svgrepo-com.svg" alt="star__icon" width="40px" loading="lazy">
+                  </div>
+                </span>
+              </footer>
+          </section>
+          <section data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine" class="hacker__course__first">
+            <img src="images/next.js" alt="hacker" class="hacker">
+            <div class="titile__hacker">
+              <h4><span class="right">بک اند</span></h4>
+              <h3 class="hacker__title">صفر تا صد نود جی اس</h3>
+            </div>
+            <div class="description">
+              <h3 class="discription">
+                اگر برای ورود به دنیای امنیت سردرگم هستید. این دوره با راهنمایی مختصر و مفید و ارائه موارد
+              </h3>
+              <div class="end__detail">
+                <h3 class="teacher">مدرس:علی قاسمی</h3>
+              </div>
+              <hr>
+              <footer class="footer__hacker">
+                <span class="free">
+                  !رایگان
+                </span>
+                <span class="mmeber">
+                  <div class="text__membe">
+                    1900
+                    <img class="icon__member" src="images/user-svgrepo-com.svg" alt="star__icon" width="40px">
+                  </div>
+                </span>
+              </footer>
+          </section>
+          <section data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine" class="hacker__course__first">
+            <img src="images/php.webp" alt="hacker" class="hacker">
+            <div class="titile__hacker">
+              <h4><span class="right">بک اند</span></h4>
+              <h3 class="hacker__title">صفر تا صد نود جی اس</h3>
+            </div>
+            <div class="description">
+              <h3 class="discription">
+                اگر برای ورود به دنیای امنیت سردرگم هستید. این دوره با راهنمایی مختصر و مفید و ارائه موارد
+              </h3>
+              <div class="end__detail">
+                <h3 class="teacher">مدرس:علی قاسمی</h3>
+              </div>
+              <hr>
+              <footer class="footer__hacker">
+                <span class="free">
+                  !رایگان
+                </span>
+                <span class="mmeber">
+                  <div class="text__membe">
+                    1900
+                    <img class="icon__member" src="images/user-svgrepo-com.svg" alt="star__icon" width="40px">
+                  </div>
+                </span>
+              </footer>
+          </section>
+          <section data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"  class="hacker__course__first">
+            <img src="images/bootsrrap.webp" alt="hacker" class="hacker">
+            <div class="titile__hacker">
+              <h4><span class="right">بک اند</span></h4>
+              <h3 class="hacker__title">صفر تا صد نود جی اس</h3>
+            </div>
+            <div class="description">
+              <h3 class="discription">
+                اگر برای ورود به دنیای امنیت سردرگم هستید. این دوره با راهنمایی مختصر و مفید و ارائه موارد
+              </h3>
+              <div class="end__detail">
+                <h3 class="teacher">مدرس:علی قاسمی</h3>
+              </div>
+              <hr>
+              <footer class="footer__hacker">
+                <span class="free">
+                  !رایگان
+                </span>
+                <span class="mmeber">
+                  <div class="text__membe">
+                    1900
+                    <img class="icon__member" src="images/user-svgrepo-com.svg" alt="star__icon" width="40px">
+                  </div>
+                </span>
+              </footer>
+          </section>
+        </div>
+        <div data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine" class="third__">
+          <section class="hacker__course__first">
+            <img src="images/clean code..webp" alt="hacker" class="hacker">
+            <div class="titile__hacker">
+              <h4><span class="right">بک اند</span></h4>
+              <h3 class="hacker__title">صفر تا صد نود جی اس</h3>
+            </div>
+            <div class="description">
+              <h3 class="discription">
+                اگر برای ورود به دنیای امنیت سردرگم هستید. این دوره با راهنمایی مختصر و مفید و ارائه موارد
+              </h3>
+              <div class="end__detail">
+                <h3 class="teacher">مدرس:علی قاسمی</h3>
+              </div>
+              <hr>
+              <footer class="footer__hacker">
+                <span class="free">
+                  !رایگان
+                </span>
+                <span class="mmeber">
+                  <div class="text__membe">
+                    1900
+                    <img class="icon__member" src="images/user-svgrepo-com.svg" alt="star__icon" width="40px">
+                  </div>
+                </span>
+              </footer>
+          </section>
+          <section class="hacker__course__first">
+            <img src="images/mini css.webp" alt="hacker" class="hacker">
+            <div class="titile__hacker">
+              <h4><span class="right">بک اند</span></h4>
+              <h3 class="hacker__title">صفر تا صد نود جی اس</h3>
+            </div>
+            <div class="description">
+              <h3 class="discription">
+                اگر برای ورود به دنیای امنیت سردرگم هستید. این دوره با راهنمایی مختصر و مفید و ارائه موارد
+              </h3>
+              <div class="end__detail">
+                <h3 class="teacher">مدرس:علی قاسمی</h3>
+              </div>
+              <hr>
+              <footer class="footer__hacker">
+                <span class="free">
+                  !رایگان
+                </span>
+                <span class="mmeber">
+                  <div class="text__membe">
+                    1900
+                    <img class="icon__member" src="images/user-svgrepo-com.svg" alt="star__icon" width="40px">
+                  </div>
+                </span>
+              </footer>
+          </section>
+          <section class="hacker__course__first">
+            <img src="images/masterfree.webp" alt="hacker" class="hacker">
+            <div class="titile__hacker">
+              <h4><span class="right">بک اند</span></h4>
+              <h3 class="hacker__title">صفر تا صد نود جی اس</h3>
+            </div>
+            <div class="description">
+              <h3 class="discription">
+                اگر برای ورود به دنیای امنیت سردرگم هستید. این دوره با راهنمایی مختصر و مفید و ارائه موارد
+              </h3>
+              <div class="end__detail">
+                <h3 class="teacher">مدرس:علی قاسمی</h3>
+              </div>
+              <hr>
+              <footer class="footer__hacker">
+                <span class="free">
+                  !رایگان
+                </span>
+                <span class="mmeber">
+                  <div class="text__membe">
+                    1900
+                    <img class="icon__member" src="images/user-svgrepo-com.svg" alt="star__icon" width="40px">
+                  </div>
+                </span>
+              </footer>
+          </section>
+          <section class="hacker__course__first">
+            <img src="images/robot.webp" alt="hacker" class="hacker">
+            <div class="titile__hacker">
+              <h4><span class="right">بک اند</span></h4>
+              <h3 class="hacker__title">صفر تا صد نود جی اس</h3>
+            </div>
+            <div class="description">
+              <h3 class="discription">
+                اگر برای ورود به دنیای امنیت سردرگم هستید. این دوره با راهنمایی مختصر و مفید و ارائه موارد
+              </h3>
+              <div class="end__detail">
+                <h3 class="teacher">مدرس:علی قاسمی</h3>
+              </div>
+              <hr>
+              <footer class="footer__hacker">
+                <span class="free">
+                  !رایگان
+                </span>
+                <span class="mmeber">
+                  <div class="text__membe">
+                    1900
+                    <img class="icon__member" src="images/user-svgrepo-com.svg" alt="star__icon" width="40px">
+                  </div>
+                </span>
+              </footer>
+          </section>
+        </div>
+        <div data-aos="fade-up"
+        data-aos-anchor-placement="center-center" class="roadmap__section">
+            <h3 class="roadmap__name right__side">نقشه راه
+              <div class="circle"></div>
+            </h3>
+          
+            <div class="second__right__side__text">
+              <h3 class="right__roadmap__Sec">
+                نقشه های راه برای شروع اصولی یادگیری
+              </h3>
+            </div>
+            <div class="container__roadmaps">
+              <div class="softskill__row">
+                <img src="images/support-svgrepo-com.svg" alt="" width="30px">
+                <h3 class="title__Soft">مهارت های نرم</h3>
+              </div>
+              <div class="python__row">
+                <img src="images/python-svgrepo-com.svg" alt="" width="40px">
+                <h3 class="python__titi">پایتون</h3>
+              </div>
+              <div class="security">
+                <img src="images/security-shield-svgrepo-com.svg" alt="" width="40px">
+                <h3 class="sec__tite">
+                  امنیت
+                </h3>
+              </div>
+              <div class="front__End__row">
+                <img src="images/coding-svgrepo-com.svg" alt="" width="40px">
+                <h3 class="front__title">فرانت اند</h3>
+              </div>
+          </div>
+            </div>
+            <div class="help__sec">
+                <h3 class="help__desl">
+                  ما چه کمکی بهتون میکنیم؟
+                  <div class="blue__circle"></div>
+                </h3>
+                <div class="title__help">
+                  <h3 class="title__h">از اونجایی که آکادمی آموزشی سبزلرن یک آکادمی خصوصی هست
+
+                  </h3>
+                </div>
+                <div class="four__Wrappers">
+                  <div class="f__Wr">
+                    <h2 class="permit">اجازه تدریس</h2>
+                    <h3 class="tech__title">
+                      به هر مدرسی رو نمیده و فقط فقط با مدرسای سینیور و مید لول وارد همکاری میشه چون کیفیت براش مهمه
+
+
+                    </h3>
+                  </div>
+                  <div class="s__Wr">
+                    <h2 class="s__wr">دوره های اختصاصی</h2>
+                    <h3 class="exclusive__course">با پشتیبانی و کیفیت بالا ارائه میده. چون خوش نام بودن نام برند و منافع مشتری و حفظ شان دیگر همکارانش براش مهمه
+
+                    </h3>
+                  </div>
+                  <div class="t__Wr">
+                    <h2 class="order">
+                      پشتیبانی دائمی
+                      
+                    </h2>
+                    <h3 class="order__2">
+                      هرجا سوالی داشتی به مشکل خوردی بچه های تیم آمادن که مشکلت رو حل کنن تالشمون اینه بدون نگرانی دوره رو کامل کنی.
+
+                    </h3>
+                  </div>
+                  <div class="f__Wr">
+                    <h2 class="course__free">
+                      دوره پولی یا رایگان
+                    </h2>
+                    <h3 class="title__course">
+                      براش مهم نیست. به مدرسینش بهترین مزایا و دستمزد رو میده تا نهایت کیفیت رو در پشتیبانی و اپدیت دوره ارائه بده
+
+
+                    </h3>
+                  </div>
+                </div>
+            </div>
+           
+            <!--
+  This example requires some changes to your config:
+  
+  ```
+  // tailwind.config.js
+  module.exports = {
+    // ...
+    plugins: [
+      // ...
+      require('@tailwindcss/forms'),
+    ],
+  }
+  ```
+-->
+<div class="relative isolate overflow-hidden bg-gray-900 py-16 sm:py-24 lg:py-32">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
+      <div class="max-w-xl lg:max-w-lg">
+        <h2 id="responisve__text__onmobile" class="text-3xl font-bold tracking-tight text-white sm:text-4xl"> با این آکادمی همیشه بروز باقی بمان</h2>
+        <p id="p__res" class="mt-4 text-lg leading-8 text-gray-300">با این اکادمی میتونی موفق شی و پیشرفت کنی
+          پس با ما همراه باش
+        </p>
+        <div class="mt-6 flex max-w-md gap-x-4">
+          <label for="email-address" class="sr-only">ادرس ایمیل</label>
+          <input id="email-address" name="email" type="email" autocomplete="email" required class="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6" placeholder="ایمیل ات را وارد کن">
+          <button type="submit" class="flex-none rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">دنبال کن</button>
+        </div>
+      </div>
+      <dl class="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:pt-2">
+        <div class="flex flex-col items-start">
+          <div class="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
+            <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
+            </svg>
+          </div>
+          <dt class="mt-4 font-semibold text-white">مقالات هفتگی</dt>
+          <dd class="mt-2 leading-7 text-gray-400">هر هفته اینجا مقالات متفاوتی منتشر میشه پس با ما همراه باش و ما را دنبال کن</dd>
+        </div>
+        <div class="flex flex-col items-start">
+          <div class="rounded-md bg-white/5 p-2 ring-1 ring-white/10">
+            <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M10.05 4.575a1.575 1.575 0 10-3.15 0v3m3.15-3v-1.5a1.575 1.575 0 013.15 0v1.5m-3.15 0l.075 5.925m3.075.75V4.575m0 0a1.575 1.575 0 013.15 0V15M6.9 7.575a1.575 1.575 0 10-3.15 0v8.175a6.75 6.75 0 006.75 6.75h2.018a5.25 5.25 0 003.712-1.538l1.732-1.732a5.25 5.25 0 001.538-3.712l.003-2.024a.668.668 0 01.198-.471 1.575 1.575 0 10-2.228-2.228 3.818 3.818 0 00-1.12 2.687M6.9 7.575V12m6.27 4.318A4.49 4.49 0 0116.35 15m.002 0h-.002" />
+            </svg>
+          </div>
+          <dt class="mt-4 font-semibold text-white">امنیت بالا در اکادمی </dt>
+          <dd class="mt-2 leading-7 text-gray-400">امنیت در اکادمی بالاست 
+            و به راحتی میتوانی اعتماد کنی
+          </dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+  <div class="absolute left-1/2 top-0 -z-10 -translate-x-1/2 blur-3xl xl:-top-6" aria-hidden="true">
+    <div class="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+  </div>
+</div>           
+    </main>
+    <div style="  background-color: rgb(36 42 56);">
+      <div class="max-w-screen-xl mx-auto px-4 sm:px-6   flex flex-wrap justify-center flex justify-between">
+          <div class="p-5">
+              <div class=" uppercasefont-medium white__text">مهم</div>
+              <a class="my-3 block" href="/#">سرویس ها <span class="text-teal-600 text-xs p-1"></span>
+              </a>
+              <a class="my-3 block" href="/#">فرانت اند<span class="text-teal-600 text-xs p-1"></span>
+              </a>
+              <a class="my-3 block" href="/#">بک اند <span class="text-teal-600 text-xs p-1"></span>
+              </a>
+              <a class="my-3 block" href="/#">به زودی<span class="text-teal-600 text-xs p-1"></span>
+              </a>
+              <a  style="color: #fff;" class="my-3 block" href="/#">لاراول <span class="text-teal-600 text-xs p-1">به زودی</span>
+              </a>
+          </div>
+          <div class="p-5">
+              <div class=" uppercase white__text ont-medium">لینک های مفید</div>
+  
+              <a class="my-3 block" href="/#">اموزش جاوا اسکریپت <span class="text-teal-600 text-xs p-1"></span>
+              </a>
+              <a class="my-3 block" href="/#">اموزش پایتون <span class="text-teal-600 text-xs p-1"></span>
+              </a>
+              <a class="my-3 block" href="/#">اموزش ارتقای مهارت ها <span class="text-teal-600 text-xs p-1">New</span>
+              </a>
+          </div>
+          <div class="p-5">
+              <div class=" uppercase white__text t-medium">دسترسی سریع</div>
+  
+              <a class="my-3 block" href="/#">قوانین و مقررات <span class="text-teal-600 text-xs p-1"></span>
+              </a>
+              <a class="my-3 block" href="/#">ارسال تیکت<span class="text-teal-600 text-xs p-1"></span>
+              </a>
+              <a class="my-3 block" href="/#">همه دوره ها<span class="text-teal-600 text-xs p-1"></span>
+              </a>
+          </div>
+          <div class="p-5">
+              <div class=" uppercase white__text t-medium">ارتباط با ما</div>
+  
+              <a class="my-3 block" href="/#">خراسان رضوی مشهد
+                  <span class="text-teal-600 text-xs p-1"></span>
+              </a>
+  
+              <a class="my-3 block" href="/#">alihj4223@gmail.com
+                  <span class="text-teal-600 text-xs p-1"></span>
+              </a>
+          </div>
+      </div>
+  </div>
+  <hr class="footer__line">
+  <div class="footer__txt">
+    <h3 class="right">
+      کلیه حقوق مادی و معنوی سایت برای سبز لرن محفوظ است.
+    </h3>
+    <h3 class="sabzlearn">
+      ساخته شده با ❤️ در سبزلرن
+
+    </h3>
+  </div>
+    
+    <script>
+      function showsidebar() {
+          const sidebar = document.querySelector('.sidebar');
+          sidebar.style.display = 'flex';
+      }
+      function hidesidebar() {
+          const sidebar = document.querySelector('.sidebar');
+          sidebar.style.display = 'none';
+      }
+  </script>
+    <script>
+      const body = document.querySelector("body"),
+            nav = document.querySelector("nav"),
+            modeToggle = document.querySelector(".dark-light"),
+            searchToggle = document.querySelector(".searchToggle"),
+            sidebarOpen = document.querySelector(".sidebarOpen"),
+            siderbarClose = document.querySelector(".siderbarClose");
+            let getMode = localStorage.getItem("mode");
+                if(getMode && getMode === "dark-mode"){
+                  body.classList.add("dark");
+                }
+      // js code to toggle dark and light mode
+            modeToggle.addEventListener("click" , () =>{
+              modeToggle.classList.toggle("active");
+              body.classList.toggle("dark");
+              // js code to keep user selected mode even page refresh or file reopen
+              if(!body.classList.contains("dark")){
+                  localStorage.setItem("mode" , "light-mode");
+              }else{
+                  localStorage.setItem("mode" , "dark-mode");
+              }
+            });
+      // js code to toggle search box
+              searchToggle.addEventListener("click" , () =>{
+              searchToggle.classList.toggle("active");
+            });
+       
+            
+      //   js code to toggle sidebar
+      sidebarOpen.addEventListener("click" , () =>{
+          nav.classList.add("active");
+      });
+      body.addEventListener("click" , e =>{
+          let clickedElm = e.target;
+          if(!clickedElm.classList.contains("sidebarOpen") && !clickedElm.classList.contains("menu")){
+              nav.classList.remove("active");
+          }
+      });
+      </script>
+    <script>
+      AOS.init();
+    </script>
+   <script>
+    let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+   </script>
+   <script></script>
+</body>
+</html>

@@ -1,0 +1,438 @@
+@mixin scroolbar{
+    /* Firefox (uncomment to work in Firefox, although other properties will not work!)  */
+/** {
+  scrollbar-width: thin;
+  scrollbar-color: #757575 #EBE1E6;
+}*/
+
+/* Chrome, Edge and Safari */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #e1e1e1;
+  border: 27px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #d7cbcb;
+}
+::-webkit-scrollbar-track {
+  background: #666666;
+  border: 16px none #ffffff;
+  border-radius: 81px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #666666;
+}
+::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+}
+@mixin html{
+  color-scheme: light dark;
+  min-height: 100vh;
+}
+@mixin bodysec{
+  transition: 3s ease-out;
+  font-style: italic;
+  line-height: 1.5;
+  background-color: rgb(243 244 246);
+  color: #000;
+}
+@mixin input1{
+  padding-left: var(--size-button);
+  height: var(--size-button);
+  font-size: 15px;
+  border: none;
+  color: #fff;
+  outline: none;
+  width: var(--size-button);
+  transition: all ease 0.3s;
+  background-color: #191A1E;
+  box-shadow: 1.5px 1.5px 3px #0e0e0e, -1.5px -1.5px 3px rgb(95 94 94 / 25%), inset 0px 0px 0px #0e0e0e, inset 0px -0px 0px #5f5e5e;
+  border-radius: 50px;
+  cursor: pointer;
+}
+@mixin third__
+{ 
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  
+}
+@mixin styled{
+  width: 10rem;
+  background-color: rgb(37 99 235);
+  color: #fff;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+@mixin container__roadmaps{
+  overflow: hidden;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+  flex-flow: row wrap;
+  gap: 1rem;
+  padding: 28px;
+  color:#fff;
+}
+@mixin right__flex{
+    display: flex;
+    flex-direction: column;
+    /* gap: 0.4rem; */
+    align-items: flex-end;
+    padding: 40px;
+    margin: 3rem 0 0 0;
+    font-size: 1.6rem;
+    // font-size: 1.6rem;
+}
+@mixin reset{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color-scheme: light dark;
+}
+@mixin left__link{
+    padding: 10px;
+    font-size: 1.3rem;
+}
+@mixin left__titile{
+  color: rgb(34 197 94);
+    // color:  rgb(78 129 251);
+}
+@mixin hackercourse{
+    width: 300px;
+    height: 390px;
+    max-width: 100%;
+    border: 2px solid #efefef;
+    border-radius: 10px;
+    background-color: rgb(40 41 61);
+    border-radius: 20px;
+    overflow: hidden;
+    border-color: rgb(50 51 77);
+}
+@mixin hacker{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    border-radius: 10px;
+}
+@mixin light{
+  width: 26rem;
+  text-align: center;
+  position: relative;
+  left: 0;
+  text-align: center;
+}
+@mixin roadmap__section{
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+}
+@mixin circle{
+  // background-color: rgb(217 70 239);
+  border-radius: 0.125rem;
+  height: 0.875rem;
+  background-color: rgb(239 68 68);
+  width: 0.875rem;
+}
+@mixin second__right__side__text {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  margin: -40px 0 0 0;
+  margin: -40px 2rem 0 0;
+  color: rgb(148 163 184);
+}
+@mixin h3roadmap__nameright__side{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: end;
+  padding: 3rem;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  color: #fff;
+  margin: 81px 0 0 0;
+}
+@mixin intro{
+  max-width: 100%;
+overflow: hidden;
+display: flex;
+  justify-content: center;
+  margin: 90px 0 0 0;
+  width: 100%;
+}
+@mixin wrapper__conten{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 20px;
+  width: 100%;
+  padding: 20px;
+  overflow: hidden;
+  margin-left: 200px;
+}
+@mixin mybutton{
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  left: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  // background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  // background: cadetblue;
+  background: #289b9f;
+  height: 30px;
+  text-align: center;
+  line-height: 1;
+}
+@mixin buttons__header{
+    color: inherit;
+    width: 107px;
+    max-width: 137px;
+    background: #0b11668a;
+    padding: 8px;
+    line-height: 1.5;
+    text-align: center;
+    border-radius: 10rem;
+    background: rgb(37 99 235);
+}
+@mixin spanright{
+  color: rgb(250 204 21);
+  background-color: rgb(250 204 21 / 0.1);
+  border-radius: 10px;
+  display: flex;
+  width: 55px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
+  font-size: 0.90rem;
+  line-height: 1rem;
+}
+@mixin h3-teacher{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1rem;
+    line-height: 1.9rem;
+    justify-content: flex-end;
+    color:#fff;
+}
+@mixin titlehacker{
+    display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: end;
+  padding: 4px;
+  gap: 10px;
+}
+@mixin spanfree{
+    color: rgb(46 213 115);
+  font-size: 1.5rem;
+  font-family: Dana,Medium;
+  font-size: 1.25rem;
+    line-height: 1.75rem;
+    padding: 10px;
+}
+@mixin h3-des{
+    text-align: center;
+    display: flex;
+    color: rgb(148 163 184);
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    font-family: Dana Light;
+}
+@mixin spanmmeber{
+  display: flex;
+  justify-content: center;
+}
+ @mixin h3hacker__title {
+  color: rgb(255 255 255);
+  font-family: Dana Medium;
+  font-size: 1.25rem;
+}
+@mixin text__membe{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 0.7000000000000002rem;
+  color: #fff;
+}
+@mixin footer__hacker{
+    display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  align-items: baseline;
+  font-size: 1.2rem;
+}@mixin h2{
+    width: 15rem;
+    font-size: 2em;
+    width: 19rem;
+    font-size: 3em;
+    font-weight: 900;
+    text-align: center;
+}
+@mixin wrapperallcourse{
+    max-width: 100%;
+    overflow:hidden;
+}
+@mixin secondcourse{
+    width: 300px;
+    height: 426px;
+    max-width: 100%;
+    border: 2px solid #efefef;
+    border-radius: 10px;
+    background-color: rgb(40, 41, 61);
+    border-radius: 20px;
+    overflow: hidden;
+    border-color: rgb(50, 51, 77);
+}
+@mixin third__course{
+  width: 300px;
+  height: 426px;
+  max-width: 100%;
+  border: 2px solid #efefef;
+  border-radius: 10px;
+  background-color: rgb(40, 41, 61);
+  border-radius: 20px;
+  overflow: hidden;
+  border-color: rgb(50, 51, 77);
+}
+@mixin fourth__course
+{
+  width: 300px;
+  height: 426px;
+  max-width: 100%;
+  border: 2px solid #efefef;
+  border-radius: 10px;
+  background-color: rgb(40, 41, 61);
+  border-radius: 20px;
+  overflow: hidden;
+  border-color: rgb(50, 51, 77);
+}
+@mixin fifth{
+  width: 300px;
+  height: 426px;
+  max-width: 100%;
+  border: 2px solid #efefef;
+  border-radius: 10px;
+  background-color: rgb(40, 41, 61);
+  border-radius: 20px;
+  overflow: hidden;
+  border-color: rgb(50, 51, 77);
+}
+// cards base styles
+@mixin banner{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    border-radius: 10px;
+}
+@mixin backend__python__Span{
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+@mixin roow
+{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+@mixin wrapper__all
+{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+  flex-flow: row wrap;
+}
+@mixin rounded{
+  width: 0.875rem;
+  height: 0.875rem;
+  background-color: rgb(217 70 239);
+  border-radius: 0.125rem;
+  
+}
+@mixin softskill__row{
+  border-radius: 1rem;
+  overflow: hidden;
+  height: 10rem;
+  background: linear-gradient(90deg, rgba(76, 175, 80, 1) 0%, rgba(49, 220, 255, 1) 100%);
+  width: 17rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-family: Dana DemiBold;
+}
+@mixin blue{
+  border-radius: 1rem;
+  overflow: hidden;
+  background: linear-gradient(90deg, rgba(31, 17, 206, 0.59) 0%, rgba(229, 43, 43, 1) 100%);
+  height: 10rem;
+  width: 17rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-family: Dana DemiBold;
+
+}
+@mixin security{
+  background: linear-gradient(90deg, rgba(28, 17, 30, 1) 26%, rgba(150, 43, 43, 1) 100%);
+  border-radius: 1rem;
+  overflow: hidden;
+  height: 10rem;
+  width: 17rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-family: Dana DemiBold;
+}
+
+@mixin front-end{
+  border-radius: 1rem;
+  background: linear-gradient(90deg, rgba(255, 0, 134, 0.32) 0%, rgba(0, 128, 0, 1) 100%);
+  overflow: hidden;
+  height: 10rem;
+  width: 17rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-family: Dana DemiBold;
+}
